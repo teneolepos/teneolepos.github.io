@@ -1,10 +1,10 @@
-@media all and (max-width: 1330px) and (min-width: 1180px) {
+@media all and (max-width: 2880px) and (min-width: 1180px) {
 
   header.boxed .header-margin{
     width:1000px;
   }
 
-  .content .text-intro{
+  /*.content .text-intro{
     width:1000px;
   }
 
@@ -12,8 +12,27 @@
     width:1000px;
   }
 
-  .content .text-intro h1, .content .text-intro p{
+  .content .text-intro h1, .content .text-intro p, #site-type ul{
     width:60%;
+  }*/
+
+  #research_preview .text-intro {
+    width: 30%;
+    margin: 2em 2em 2em 15em;
+  }
+
+  #research .text-intro .research_preview p {
+      margin-top: 0.5em;
+  }
+
+  #research .text-intro {
+    margin-bottom: 2em;
+  }
+
+  #research img {
+      width: 30%;
+      margin: 2em;
+      display: inline-block;
   }
 
   #full{
@@ -24,6 +43,13 @@
     max-width:1000px;
   }
 
+  #projects.text-intro {
+      margin: 5em 15em;
+    }
+
+#projects.text-intro h1, #projects.text-intro p{
+  width: 100%;
+}
 
   /*
   **************************
@@ -48,9 +74,6 @@
   }
 
 
-}
-
-
 @media all and (max-width: 1179px) and (min-width: 1024px) {
 
 
@@ -58,16 +81,40 @@
     width:800px;
   }
 
-  .content .text-intro{
+  /*.content .text-intro{
     width:800px;
   }
 
   .footer-margin{
     width:800px;
+  }*/
+
+
+  .content .text-intro h1, .content .text-intro p, #site-type ul{
+    width:60%;
   }
 
-  .content .text-intro h1, .content .text-intro p{
-    width:60%;
+  #research_preview .text-intro {
+    width: 30%;
+    margin: 2em 2em 2em 15em;
+  }
+
+  #research .text-intro .research_preview p {
+      margin-top: 0.5em;
+  }
+
+  #research .text-intro {
+    margin-bottom: 2em;
+  }
+
+  #research img {
+      width: 30%;
+      margin: 2em;
+      display: inline-block;
+  }
+
+  #projects .content .text-intro {
+    margin: 5em 15em;
   }
 
   #full{
@@ -111,16 +158,42 @@
     width:600px;
   }
 
-  .content .text-intro{
+  /*.content .text-intro{
     width:600px;
+    margin: 2em 8em;
   }
 
   .footer-margin{
     width:600px;
-  }
+  }*/
 
   .content .text-intro h1, .content .text-intro p{
     width:100%;
+  }
+
+  .content .text-intro{
+    margin: 5em 15em;
+    height: 100%;
+    display: inline-block;
+  }
+
+  #research_preview .text-intro {
+    width: 30%;
+    margin: 2em 2em 2em 15em;
+  }
+
+  #research .text-intro .research_preview p {
+      margin-top: 0.5em;
+  }
+
+  #research .text-intro {
+    margin-bottom: 2em;
+  }
+
+  #research img {
+      width: 30%;
+      margin: 2em;
+      display: inline-block;
   }
 
   #full{
@@ -130,21 +203,21 @@
   .prev-next{
     max-width:600px;
   }
-  
+
   .home-sidebar{
     display:none;
   }
-  
+
   ul.header-nav{
     width:50%;
-  
+
   }
-  
+
   header li > a{
     padding-right: 15px;
     padding-left: 15px;
   }
- 
+
 
 
   /*
@@ -179,15 +252,25 @@
   }
 
   .content .text-intro{
-    width:400px;
+    margin: 3em;
   }
 
   .footer-margin{
     width:400px;
   }
 
+  .content .text-intro{
+    margin: 5em 15em;
+    height: 100%;
+    display: inline-block;
+  }
+
   .content .text-intro h1, .content .text-intro p{
     width:100% !important;
+  }
+
+  #projects .content .text-intro {
+    margin: 5em 15em;
   }
 
   #full{
@@ -202,29 +285,29 @@
   .prev-next{
     max-width:400px;
   }
-  
+
   .home-sidebar{
     display:none;
   }
-  
+
   ul.header-nav{
     width:50%;
-  
+
   }
-  
+
   header li > a{
     padding-right: 15px;
     padding-left: 15px;
   }
- 
+
   .one-column, .two-column{
     width:100%;
   }
-  
+
   .contact-one, .contact-two, .contact-three{
     width:100%;
   }
-  
+
   textarea{
     height:250px;
   }
@@ -232,15 +315,15 @@
   input.button-submit{
     margin-bottom:100px;
   }
-  
+
   .logo, .menu-index{
     display:block;
   }
 
   header.boxed{
     display:none !important;
-  }  
-  
+  }
+
   #footer-left{text-align:center;}
 
   /*
@@ -280,7 +363,7 @@
   .footer-margin{
     width:280px;
   }
-  
+
   .footer-margin .copyright{line-height:40px;}
 
   .content .text-intro h1, .content .text-intro p{
@@ -291,7 +374,7 @@
     width:280px;
     display:block !important;
   }
-  
+
   .menu-index{
     display:block !important;
   }
@@ -299,23 +382,23 @@
   .prev-next{
     max-width:280px;
   }
-  
+
   .home-sidebar{
     display:none;
   }
- 
+
   .one-column, .two-column{
     width:100%;
   }
-  
+
   .contact-one, .contact-two, .contact-three{
     width:100%;
   }
-  
+
   textarea{
     height:250px;
   }
-  
+
   input, textarea{
     padding:0;
   }
@@ -323,15 +406,15 @@
   input.button-submit{
     margin-bottom:100px;
   }
-  
+
   header.boxed{
     display:none !important;
-  }  
-  
+  }
+
   #footer-left{text-align:center;}
-  
+
   .content .text-intro h1{
-    font-size:33px; 
+    font-size:33px;
     line-height:50px;
   }
 
