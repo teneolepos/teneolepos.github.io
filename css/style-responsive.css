@@ -16,13 +16,21 @@
     width:60%;
   }*/
 
+  #site-type.text-intro {
+    margin: 10em 12em 5em 12em;
+  }
+
   #research_preview .text-intro {
     width: 30%;
-    margin: 2em 2em 2em 15em;
+    margin: 2em 2em 2em 12em;
   }
 
   #research .text-intro .research_preview p {
       margin-top: 0.5em;
+  }
+
+  #research_header.text-intro{
+    margin: 5em 12em;
   }
 
   #research .text-intro {
@@ -43,13 +51,22 @@
     max-width:1000px;
   }
 
-  #projects.text-intro {
-      margin: 5em 15em;
-    }
+  #projects.text-intro{
+      margin: 5em 12em;
+  }
 
-#projects.text-intro h1, #projects.text-intro p{
-  width: 100%;
-}
+  #projects.text-intro h1, #projects.text-intro p{
+    width: 100%;
+  }
+
+  .contact-margin{
+    margin: 5em 12em;
+  }
+
+  .social-footer {
+    margin-top: 8em;
+    margin-right: 12em;
+  }
 
   /*
   **************************
@@ -63,8 +80,12 @@
     padding-right: 320px;
   }
 
-  .portfolio-grid{
+  #portfolio.text-intro {
+    margin: 5em 12em;
+  }
 
+  .portfolio-grid{
+    margin: 0em 12em 5em 12em;
     width:1030px;
 
   }
@@ -72,8 +93,13 @@
   .grid-hover, li.grid-item, li.grid-item img{
     width:312px;
   }
+}
 
-
+/*
+**************************
+(max-width: 1179px) and (min-width: 1024px)
+**************************
+*/
 @media all and (max-width: 1179px) and (min-width: 1024px) {
 
 
@@ -87,19 +113,31 @@
 
   .footer-margin{
     width:800px;
-  }*/
+  }
+
+  .content .text-intro h1, .content .text-intro p{
+  }
+  */
 
 
-  .content .text-intro h1, .content .text-intro p, #site-type ul{
-    width:60%;
+  #site-type.text-intro {
+    margin: 10em 12em 5em 12em;
+  }
+
+  #portfolio.text-intro {
+    margin: 5em 12em;
+  }
+
+  #research_header.text-intro{
+    margin: 5em 12em;
   }
 
   #research_preview .text-intro {
     width: 30%;
-    margin: 2em 2em 2em 15em;
+    margin: 2em 2em 2em 12em;
   }
 
-  #research .text-intro .research_preview p {
+  #research .text-intro .research_preview1 p {
       margin-top: 0.5em;
   }
 
@@ -111,6 +149,10 @@
       width: 30%;
       margin: 2em;
       display: inline-block;
+  }
+
+  #projects.text-intro{
+      margin: 5em 12em;
   }
 
   #projects .content .text-intro {
@@ -125,6 +167,15 @@
     max-width:800px;
   }
 
+  .contact-margin{
+    margin: 5em 12em;
+    width: auto;
+  }
+
+  .social-footer {
+    margin-top: 8em;
+    margin-right: 12em;
+  }
 
   /*
   **************************
@@ -139,9 +190,8 @@
   }
 
   .portfolio-grid{
-
+    margin: 0em 12em 5em 12em;
     width:830px;
-
   }
 
   .grid-hover, li.grid-item, li.grid-item img{
@@ -150,7 +200,11 @@
 
 }
 
-
+/*
+**************************
+(max-width: 1023px) and (min-width: 769px)
+**************************
+*/
 @media all and (max-width: 1023px) and (min-width: 769px) {
 
 
@@ -167,19 +221,29 @@
     width:600px;
   }*/
 
+  #site-type.text-intro {
+    margin: 10em 12em 5em 12em;
+  }
+
+  #portfolio.text-intro {
+    margin: 5em 12em;
+  }
+
+  #research_header.text-intro{
+    margin: 5em 12em;
+  }
+
   .content .text-intro h1, .content .text-intro p{
     width:100%;
   }
 
-  .content .text-intro{
-    margin: 5em 15em;
-    height: 100%;
-    display: inline-block;
-  }
-
   #research_preview .text-intro {
     width: 30%;
-    margin: 2em 2em 2em 15em;
+    margin: 2em 2em 2em 12em;
+  }
+
+  #research_header.text-intro{
+    margin: 5em 12em;
   }
 
   #research .text-intro .research_preview p {
@@ -218,7 +282,15 @@
     padding-left: 15px;
   }
 
+  .contact-margin{
+    margin: 5em 12em;
+    width: auto;
+  }
 
+  .social-footer {
+    margin-top: 8em;
+    margin-right: 12em;
+  }
 
   /*
   **************************
@@ -233,6 +305,7 @@
   }
 
   .portfolio-grid{
+    margin: 0em 12em 5em 12em;
     width:630px;
   }
 
@@ -242,8 +315,11 @@
 
 }
 
-
-
+/*
+**************************
+(max-width: 768px) and (min-width: 481px)
+**************************
+*/
 @media all and (max-width: 768px) and (min-width: 481px) {
 
 
@@ -251,18 +327,13 @@
     width:400px;
   }
 
-  .content .text-intro{
-    margin: 3em;
-  }
-
   .footer-margin{
     width:400px;
   }
 
   .content .text-intro{
-    margin: 5em 15em;
+    margin: 3em;
     height: 100%;
-    display: inline-block;
   }
 
   .content .text-intro h1, .content .text-intro p{
@@ -326,6 +397,24 @@
 
   #footer-left{text-align:center;}
 
+  #research img {
+      width: 100%;
+      padding: 2em;
+  }
+
+  .contact-margin{
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    width: auto;
+  }
+
+  .social-footer {
+    margin-top: 4em;
+    margin-right: 2em;
+    margin-bottom: 4em;
+  }
+
   /*
   **************************
   Portfolio Grid
@@ -348,7 +437,11 @@
 
 }
 
-
+/*
+**************************
+(max-width: 480px) and (min-width: 320px)
+**************************
+*/
 @media all and (max-width: 480px) and (min-width: 320px) {
 
 
@@ -418,6 +511,10 @@
     line-height:50px;
   }
 
+  #research img {
+      width: 100%;
+      margin: 2em;
+  }
   /*
   **************************
   Portfolio Grid

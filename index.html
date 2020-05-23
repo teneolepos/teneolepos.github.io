@@ -1,24 +1,25 @@
-<!doctype html>
-
-<html lang="en">
-<head>
-
-  <meta charset="utf-8">
-  <title>Portfolio of Sining Zhou</title>
-  <meta name="description" content="THOMSOON with no sidebar - Portfolio with grid HTML5 and CSS3 modern simplicity style template. Check my portfolio. Download free now with file Photoshop! ">
-  <meta name="keywords" content="clean, simplicity, theme, html5, sidebar, masonry">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio of Sining Zhou</title>
+  <meta name="description" content="Portfolio of Sining Zhou">
+  <meta name="keywords" content="sining, zhou, portfolio, work, UX, project manager, strategy, resume">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="author" content="thomsoon.com">
+  <meta name="author" content="Sining Zhou">
   <link rel="icon" type="image/png" href="img/icon.png" />
 
 <!--Style-->
 
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style-responsive.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+  <!--<link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-responsive.css">-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/mystyles.css">
 
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -68,147 +69,175 @@
 
   <!--Content-->
 
-  <div class="content" id="ajax-content">
-
-
-        <div class="text-intro" id="site-type">
-
-          <h1>Hi, I'm Sining</h1>
-          <h1 class="typewrite"><span>&nbsp;</span></h1>
-          <p>I am passionate about working with teams to build exciting products and implement digital transformations that create meaningful experiences for the user.</p>
-          <p>My areas of expertise include:</p>
-          <ul>
-            <li>Managing teams of developers and designers to bring products to life. Skill in agile product development and related project management tools.</li>
-            <li>Working with clients to understand their customers through user research and developing customer journeys and personas.</li>
-            <li>Wireframing, prototyping, visual design and basic computer programming.</li>
-            <li>Helping clients become more customer centric by creating a strategy for successful digital transformations.</li>
-            <li>Developing, planning, and implementing a holistic content strategy for web and related applications. Includes experience in content audit, content strategy, content management, and content deployment.</li>
-          </ul>
-          <a href="CV_Zhou, Sining.pdf" target="_blank" download="CV_Zhou, Sining"><input class="button" type="button" value="Download Resume"></a>
+<section class="section" id="intro">
+     <div class="container">
+       <div class="columns">
+         <div class="column is-three-fifths is-offset-one-fifth">
+          <div class="content" id="site-type"><!--site-type needed for js-->
+             <h1 class="title is-1">Hi, I'm Sining</h1>
+             <h1 class="subtitle is-2"><div class="typewrite"><span>&nbsp;</span></h1>
+             <p>I am passionate about working with teams to build exciting products and implement digital transformations that create meaningful experiences for the user.</p>
+             <p>My areas of expertise include:</p>
+             <ul>
+               <li>Managing teams of developers and designers to bring products to life. Skill in agile product development and related project management tools.</li>
+               <li>Working with clients to understand their customers through user research and developing customer journeys and personas.</li>
+               <li>Wireframing, prototyping, visual design and basic computer programming.</li>
+               <li>Helping clients become more customer centric by creating a strategy for successful digital transformations.</li>
+               <li>Developing, planning, and implementing a holistic content strategy for web and related applications. Includes experience in content audit, content strategy, content management, and content deployment.</li>
+             </ul>
+             <button class="button"><a href="CV_Zhou, Sining.pdf" target="_blank" download="CV_Zhou, Sining">Download Resume</a></button>
+           </div>
+          </div>
         </div>
     </div>
+  </div>
+</section>
 
-  <!--Portfolio grid-->
-  <div class="content" id="portfolio">
-      <div class="text-intro">
-        <h1>Portfolio</h1>
+
+<!--Portfolio grid-->
+<section class="section" id="portfolio">
+  <div class="container">
+    <div class="content">
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+            <h2>Portfolio</h2>
+
+            <ul class="portfolio-grid">
+
+              <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                <img src="img/cover/cose.jpg">
+                  <a class="ajax-link" href="cosentyx.html">
+                    <div class="grid-hover">
+                      <h1>COSENTYX<sup>®</sup></h1>
+                      <p>Content Strategy / UX / CMS</p>
+                    </div>
+                  </a>
+              </li>
+
+              <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                <img src="img/cover/xare.jpg">
+                  <a class="ajax-link" href="single.html">
+                    <div class="grid-hover">
+                      <h1>XARELTO<sup>®</sup></h1>
+                      <p>Content Strategy / UX</p>
+                    </div>
+                  </a>
+              </li>
+
+              <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                <img src="img/cover/mpitas.jpg">
+                  <a class="ajax-link" href="single.html">
+                    <div class="grid-hover">
+                      <h1>Monster Pain in the AS</h1>
+                      <p>Content Strategy / UX / Product Management</p>
+                    </div>
+                  </a>
+              </li>
+
+              <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                <img src="img/cover/council.jpg">
+                  <a class="ajax-link" href="single.html">
+                    <div class="grid-hover">
+                      <h1>UK Local Council</h1>
+                      <p>Content Strategy / UX / Product Management</p>
+                    </div>
+                  </a>
+              </li>
+
+              <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                <img src="img/cover/hapi.jpg">
+                  <a class="ajax-link" href="single.html">
+                    <div class="grid-hover">
+                      <h1>Harvard Pilgrim</h1>
+                      <p>Content Strategy / UX / Product Management</p>
+                    </div>
+                  </a>
+              </li>
+
+              <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                <img src="img/cover/invk.jpg">
+                  <a class="ajax-link" href="single.html">
+                    <div class="grid-hover">
+                      <h1>INVOKANA<sup>®</sup></h1>
+                      <p>Content Strategy / UX / Product Management</p>
+                    </div>
+                  </a>
+              </li>
+
+              <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                <img src="img/cover/ala.jpg">
+                  <a class="ajax-link" href="single.html">
+                    <div class="grid-hover">
+                      <h1>American Lung Association & <br>Ad Council</h1>
+                      <p>Content Strategy / UX / Product Management</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
-
-  <ul class="portfolio-grid">
-
-
-    <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-      <img src="img/portfolio/cose.jpg">
-        <a class="ajax-link" href="single.html">
-          <div class="grid-hover">
-            <h1>COSENTYX<sup>®</sup></h1>
-            <p>Content Strategy / UX / CMS</p>
-          </div>
-        </a>
-    </li>
-
-    <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-      <img src="img/portfolio/xare.jpg">
-        <a class="ajax-link" href="single.html">
-          <div class="grid-hover">
-            <h1>XARELTO<sup>®</sup></h1>
-            <p>Content Strategy / UX</p>
-          </div>
-        </a>
-    </li>
-
-    <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-      <img src="img/portfolio/mpitas.jpg">
-        <a class="ajax-link" href="single.html">
-          <div class="grid-hover">
-            <h1>Monster Pain in the AS</h1>
-            <p>Content Strategy / UX / Product Management</p>
-          </div>
-        </a>
-    </li>
-
-    <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-      <img src="img/portfolio/council.jpg">
-        <a class="ajax-link" href="single.html">
-          <div class="grid-hover">
-            <h1>UK Local Council</h1>
-            <p>Content Strategy / UX / Product Management</p>
-          </div>
-        </a>
-    </li>
-
-    <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-      <img src="img/portfolio/hapi.jpg">
-        <a class="ajax-link" href="single.html">
-          <div class="grid-hover">
-            <h1>Harvard Pilgrim</h1>
-            <p>Content Strategy / UX / Product Management</p>
-          </div>
-        </a>
-    </li>
-
-    <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-      <img src="img/portfolio/invk.jpg">
-        <a class="ajax-link" href="single.html">
-          <div class="grid-hover">
-            <h1>INVOKANA<sup>®</sup></h1>
-            <p>Content Strategy / UX / Product Management</p>
-          </div>
-        </a>
-    </li>
-
-    <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-      <img src="img/portfolio/ala.jpg">
-        <a class="ajax-link" href="single.html">
-          <div class="grid-hover">
-            <h1>American Lung Association & <br>Ad Council</h1>
-            <p>Content Strategy / UX / Product Management</p>
-          </div>
-        </a>
-    </li>
-
-  </ul>
-
-  </div>
-
-  <div id="ajax-sidebar"></div>
+  </section>
 
 
   <!--Research-->
-  <div class="content" id="research">
-        <div class="text-intro">
-          <h1>Research</h1>
-          <p>I have a deep interest in the obesity epidemic in the United States and the systemic levers in place that contribute to the growing problem. My graduate research focuses on areas to address these challenges.</p>
-        </div>
-        <div id="research_preview">
-          <div class="text-intro">
-            <h2>Carbon Foodprint</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <img src="img/portfolio/council.jpg">
-      </div>
-
-  </div>
-
-
-
-  <!-- Contact-->
-
-  <div class="content" id="contact">
-      <div class="text-intro">
-
-          <h1>Contact</h1>
-
-          <div class="contact-margin">
-            <div class="social-footer">
-              <a href="https://www.facebook.com/thomsooncom"><i class="fa fa-envelope-o"></i></a>
-              <a href="https://www.facebook.com/thomsooncom"><i class="fa fa-linkedin"></i></a>
-              <a href="https://www.behance.net/TomaszMazurczak"><i class="fa fa-instagram"></i></a>
+  <section class="section" id="research">
+       <div class="container">
+         <div class="content">
+         <div class="columns">
+           <div class="column is-10 is-offset-1">
+              <h2>Research</h2>
+              <p>I have a deep interest in the obesity epidemic in the United States and the systemic levers in place that contribute to the growing problem. My graduate research focuses on areas to address these challenges.</p>
             </div>
           </div>
-  </div>
-</div>
+
+          <div class="columns">
+            <div class="column is-6 is-offset-1">
+                <h3>Carbon Foodprint</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="column is-4">
+              <img src="img/portfolio/council.jpg">
+            </div>
+          </div>
+
+          <div class="columns">
+            <div class="column is-6 is-offset-1">
+                <h3>Carbon Foodprint</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="column is-4">
+              <img src="img/portfolio/council.jpg">
+            </div>
+          </div>
+
+        </div>
+      </div>
+</section>
+      <!-- Contact-->
+
+<section class="section" id="contact">
+     <div class="container">
+       <div class="content">
+        <div class="columns">
+          <div class="column is-mobile is-offset-1">
+              <h2>Contact</h2>
+          </div>
+          <div class="column is-mobile" id="social-media">
+            <span class="icon"><a href="https://www.facebook.com/thomsooncom"><i class="far fa-envelope"></i></a></span>
+          </div>
+          <div class="column is-mobile" id="social-media">
+            <span class="icon"><a href="https://www.facebook.com/thomsooncom"><i class="fab fa-linkedin-in"></i></a></span>
+          </div>
+          <div class="column is-mobile" id="social-media">
+            <span class="icon"><a href="https://www.behance.net/TomaszMazurczak"><i class="fab fa-instagram"></i></a></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</section>
 
   <!--Footer-->
 
@@ -223,7 +252,7 @@
 
 
 <!--Scripts-->
-
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/modernizr.custom.42534.js" type="text/javascript"></script>

@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900,100,200);
 
+
 body{
   font-family: 'Inter', sans-serif;
   font-size:16px;
@@ -19,6 +20,14 @@ body{
 		color: #fff;
 		text-shadow: none;
 	}
+
+h1{
+    font-family: 'Domine', serif;
+    font-size:5em;
+    color:#000000;
+    font-weight:600;
+    line-height:50px;
+  }
 
 h2{
   font-family: 'Domine', serif;
@@ -356,7 +365,6 @@ CONTENT
 */
 #ajax-content{
       background-color:#f1edea;
-      padding-top: 7em;
 }
 
 #site-type ul {
@@ -421,6 +429,10 @@ CONTENT
 .content{
   width:100%;
   position: relative;
+}
+
+.content .text-intro {
+  display: inline-block;
 }
 
 .content .text-intro h1{
@@ -547,7 +559,6 @@ PORTFOLIO GRID
 .portfolio-grid{
   list-style-type: none;
   width:1170px;
-  margin: 5em 15em;
   position:relative;
   overflow:hidden;
 }
@@ -618,6 +629,7 @@ RESEARCH
 */
 #research {
   background-color: #a3bcc3;
+  padding-bottom: 3em;
 }
 
 #research_preview h2 {
@@ -645,10 +657,10 @@ CONTACT HOMEPAGE
   display: inline-block;
 }
 .contact-margin{
-  display: block;
+  display: inline-block;
 }
 
-.contact-margin .social-footer{
+.social-footer{
   color: #686868;
   letter-spacing: 1px;
   font-size: 13px;
@@ -658,13 +670,13 @@ CONTACT HOMEPAGE
   float: left;*/
 }
 
-.contact-margin .social-footer a{
+.social-footer a{
   font-size:24px;
   color:black;
   padding: 20px;
 }
 
-.contact-margin .social-footer a:hover{
+.social-footer a:hover{
   color:#c3c3c3;
 }
 
@@ -845,3 +857,5 @@ textarea{
 }
 
 textarea:focus{background:#f4f4f4; height:250px;}
+@import "bulma/sass/utilities/_all.sass"
+@import "bulma/sass/grid/columns.sass"
