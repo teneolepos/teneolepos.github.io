@@ -132,10 +132,25 @@ $input-shadow: none;
 hr{
   width: 66.666666%;
   margin-left: 16.66666666%;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-right: 0em;
+}
+
+img {
+    width: 100%;
+}
+
+#internal {
+  background-color: $beige;
 }
 
 #turquoise {
   background-color: $turquoise;
+}
+
+#beige {
+  background-color: $beige;
 }
 
 /*
@@ -198,7 +213,7 @@ PRELOADER
 
 /*
 **************************
-NAVIGATION OPACITY
+NAVIGATION
 **************************
 */
 
@@ -217,9 +232,7 @@ ul.menu-fullscreen{
   font-family: $family-primary;
   width: 100%;
   top: 50%;
-  position: absolute;
   height: 280px;
-  margin-top: -140px;
 }
 
 ul.menu-fullscreen li{
@@ -227,39 +240,84 @@ ul.menu-fullscreen li{
   text-align:center;
   line-height:70px;
   font-weight:500;
+  padding-top: 1em;
 }
 
 ul.menu-fullscreen li > a{
-  color:#999999;
+  color:#ffffff;
   border:0;
 }
 
 ul.menu-fullscreen li > a:hover{
-  color:#ffffff;
+  color:#43283A20;
 }
 
 
-#full{
+/*#full{
   width:1140px;
   position: relative;
   top:0;
   margin:0 auto;
   z-index: 9997;
+}*/
+
+#full img {
+  width: 50%;
+  margin-top: 2em;
 }
 
 
 #fullscreen{
+  color: white;
   display:none;
-  position:absolute;
+  background-color: $beige;
+  border: 1px solid $beige;
   top:0;
   width:100%;
   margin:0 auto;
-  height:80px;
   z-index: 9998;
+}
+
+#fullscreen .section {
+  padding-top: 0em;
+  padding-bottom: 0em;
 }
 
 #bg-white {
   background-color: white;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-family: $family-primary;
+  color: $red;
+}
+
+#nav.column.is-3-mobile.is-1-desktop {
+  margin-right: 1em;
+}
+
+#nav .ajax-link:hover {
+  color: #43283A95;
+  border-bottom: 2px solid #43283A95;
+}
+
+/*#fullscreen .column.is-1, .column.is-2 {
+  display: flex;
+  align-items: center;
+}
+
+#fullscreen .column.is-1 .ajax-link, .column.is-2 .ajax-link {
+  font-size: 18px;
+  font-family: $family-primary;
+  color: $red;
+}
+
+#fullscreen .column.is-1 .ajax-link:hover, .column.is-2 .ajax-link:hover {
+  color: #43283A95;
+  border-bottom: 2px solid #43283A95;
 }
 /*
 **************************
@@ -320,6 +378,9 @@ ul.social-icon a:hover{
   cursor:pointer;
 }
 
+#fullscreen {
+  color: white;
+}
 
 .menu-index i{
   float:right;
@@ -366,9 +427,9 @@ header .logo > a{
   font-size:23px;
   font-weight:800;
   float:left;
-  line-height:80px;
+  line-height:60px;
   padding-right:40px;
-  border-bottom: 1px solid #f1f1f1;
+  /*border-bottom: 2px solid #43283A85*/
 }
 
 header .logo > a:hover{
@@ -414,6 +475,26 @@ header li:hover ul{
 }
 /*
 **************************
+PASSWORD
+**************************
+*/
+#password img {
+  margin-top: 30%;
+}
+
+#password img {
+  width: 20%;
+}
+
+#passbox .column.is-4 {
+  margin-bottom: 30%;
+}
+
+#passbox input {
+  margin-bottom: 2em;
+}
+/*
+**************************
 CONTENT
 **************************
 */
@@ -433,116 +514,14 @@ CONTENT
   background-size: cover;
 }
 
-#intro .content {
-  margin-top: 5em;
-  margin-bottom: 5em;
-}
-
 #intro .button {
   margin-top: 1em;
+  margin-bottom: 3em;
 }
 
-/*#site-type ul {
-    width: 100%;
-    font-size: 16px;
-    color: #3a3a3a;
-    font-weight: 400;
-    line-height: 22px;
-    display: block;
-    list-style-type: disc;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 1em;
+#image img {
+  border: 1px solid $grey-light;
 }
-
-#site-type li {
-    font-size: inherit;
-    color: inherit;
-    display: list-item;
-    text-align: -webkit-match-parent;
-    padding-top: 0.3em;
-}
-
-.one-column{
-  width:40%;
-  position:relative;
-  float:left;
-}
-
-.two-column{
-  width:60%;
-  position:relative;
-  float:left;
-}
-
-.one-column p{
-  width:70% !important;
-}
-
-.two-column p{
-  width:100% !important;
-}
-
-.clear{
-  clear:both;
-}
-
-.content{
-  width:100%;
-  position: relative;
-}
-
-.content .text-intro {
-  display: inline-block;
-}
-
-.content .text-intro h1{
-  font-family: 'Domine', serif;
-  font-size:43px;
-  color:#000000;
-  font-weight:600;
-  line-height:50px;
-}
-
-.content .text-intro p{
-  font-size:16px;
-  color:#3a3a3a;
-  margin-top:30px;
-  font-weight:400;
-  line-height:22px;
-}
-
-        .typed-cursor{
-            opacity: 1;
-            font-weight: 900;
-            -webkit-animation: blink 0.7s infinite;
-            -moz-animation: blink 0.7s infinite;
-            -ms-animation: blink 0.7s infinite;
-            -o-animation: blink 0.7s infinite;
-            animation: blink 0.7s infinite;
-        }
-
-        @-webkit-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
-        @-moz-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
-        @-ms-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
-        @-o-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
 
 /*
 **************************
@@ -581,6 +560,8 @@ PORTFOLIO GRID
 
 #portfolio .content ul{
   list-style: none;
+  margin-left: 0em;
+  margin-right: 0em;
 }
 
 .prev-next{
@@ -631,7 +612,7 @@ PORTFOLIO GRID
 }
 
 li.grid-item{
-  width:33%;
+  width:50%;
   position:relative;
   float:left;
   padding:15px;
@@ -641,7 +622,7 @@ li.grid-item{
   position: absolute;
   height: 92%;
   top:30px;
-  background: #43283A;
+  background-color: $red;
   z-index: 2;
   opacity: 0;
   -webkit-transition: all 0.2s ease-in;
@@ -649,6 +630,8 @@ li.grid-item{
 	-ms-transition: all 0.2s ease-in;
 	-o-transition: all 0.2s ease-in;
 	transition: all 0.2s ease-in;
+  width: 92%;
+  height: 90%;
 }
 
 .grid-hover:hover{
@@ -680,7 +663,7 @@ li.grid-item{
 }
 
 li.grid-item img{
-  width:360px;
+  width:100%;
 }
 
 /*
@@ -691,6 +674,10 @@ RESEARCH
 #research {
   background-color: $turquoise;
   padding-bottom: 3em;
+}
+
+#research .column.is-6.is-offset-1 {
+  padding-right: 3em;
 }
 
 #research_preview h2 {
@@ -723,6 +710,7 @@ CONTACT HOMEPAGE
 
 #social-media{
   text-align: center;
+  padding-top: 1.5em;
 }
 
 #social-media a{
@@ -779,6 +767,7 @@ PAGES
 }
 #quote h3 {
     line-height: 1.5em;
+    font-weight: 300;
 }
 /*
 **************************
@@ -906,3 +895,27 @@ textarea{
 }
 
 textarea:focus{background:#f4f4f4; height:250px;}
+
+@media all and (max-width: 480px) {
+
+  /*
+  **************************
+  Portfolio Grid
+  **************************
+  */
+
+  #portfolio-sidebar{
+
+    width:310px !important;
+    padding-right: 0;
+  }
+
+  .portfolio-grid{
+    width:310px;
+  }
+
+  .grid-hover, li.grid-item, li.grid-item img{
+    width:280px;
+  }
+
+}
