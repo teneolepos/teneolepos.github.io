@@ -55,20 +55,20 @@
 
   <!--Content-->
 <div="section">
-    <div class="container">
+    <div class="container" id="password">
 
-    <div class="content" id="password">
+    <div class="content">
       <div class="columns">
-        <div class="column is-4 is-offset-4">
+        <div class="column" id="logo">
           <img src="img/favicon.png">
         </div>
       </div>
 
     <div class="columns" id="passbox">
-      <div class="column is-4 is-offset-4">
+      <div class="column">
         <p>Enter password:</p>
         <input id="pass" type="text" />
-          <button class="button">Submit</button>
+          <button class="button" id="submit">Submit</button>
        </div>
      </div>
 
@@ -76,33 +76,44 @@
  </div>
 </div>
 
+<!--<div id="password">
+  <div class="container pw-box">
+    <div class="row pw-form">
+      <h2>Sining Zhou</h2>
+      <p>Enter password:</p>
+      <input id="pass" type="text" />
+        <button id="submit">Click to login</button>
+     </div>
+   </div>
+ </div>-->
+
 <script type="text/javascript">
-    function hashFunc (input) {
-    /*	Do magical hash stuff */
-    var hash = 5381,
-        i    = input.length;
+  function hashFunc (input) {
+  /*	Do magical hash stuff */
+  var hash = 5381,
+      i    = input.length;
 
-    while(i) {
-      hash = (hash * 33) ^ input.charCodeAt(--i);
-      }
-
-    /* JavaScript does bitwise operations (like XOR, above) on 32-bit signed
-       * integers. Since we want the results to be always positive, convert the
-       * signed int to an unsigned by doing an unsigned bitshift. */
-    return hash >>> 0;
+  while(i) {
+    hash = (hash * 33) ^ input.charCodeAt(--i);
     }
 
-    window.onload = function(){
-      document.getElementById('submit').onclick = function(){
-    	var pw = document.getElementById('pass').value;
-        var hash = hashFunc (pw);
-        if (hash === 2920416081) {
-        	window.location.href = "home.html";
-          } else {
-        	alert('Incorrect password. Please try again.');
-          }
+  /* JavaScript does bitwise operations (like XOR, above) on 32-bit signed
+     * integers. Since we want the results to be always positive, convert the
+     * signed int to an unsigned by doing an unsigned bitshift. */
+  return hash >>> 0;
+  }
+
+  window.onload = function(){
+    document.getElementById('submit').onclick = function(){
+    var pw = document.getElementById('pass').value;
+      var hash = hashFunc (pw);
+      if (hash === 2920416081) {
+        window.location.href = "home.html";
+        } else {
+        alert('Incorrect password. Please try again.');
         }
       }
+    }
 </script>
 
   <!--Footer-->

@@ -28,6 +28,7 @@ $input-border-color: transparent;
 $input-shadow: none;
 
 // Code
+
 .content {
   body{
     font-family: 'Inter', sans-serif;
@@ -36,6 +37,20 @@ $input-shadow: none;
     color: $grey-dark;
     overflow-y:scroll;
     -webkit-font-smoothing: antialiased;
+  }
+
+  html {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
   }
 
   ::selection {
@@ -106,7 +121,7 @@ $input-shadow: none;
   }
 }
 
-.button{
+.button {
   background:$red;
   border:0;
   font-family: $family-sans-serif;
@@ -478,20 +493,25 @@ header li:hover ul{
 PASSWORD
 **************************
 */
-#password img {
-  margin-top: 30%;
+#password {
+  height: 90vh;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#password img {
+#logo img {
   width: 20%;
-}
-
-#passbox .column.is-4 {
-  margin-bottom: 30%;
 }
 
 #passbox input {
   margin-bottom: 2em;
+  padding: 1rem;
+}
+
+#passbox input:focus {
+  outline-color: $red;
 }
 /*
 **************************
@@ -515,6 +535,7 @@ CONTENT
 }
 
 #intro .button {
+  display: inline-block;
   margin-top: 1em;
   margin-bottom: 3em;
 }
@@ -615,13 +636,21 @@ li.grid-item{
   width:50%;
   position:relative;
   float:left;
-  padding:15px;
+  padding-left: 0px;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
-.grid-hover{
+li.grid-item img{
+  width:100%;
+}
+
+.grid-hover {
   position: absolute;
+  overflow: hidden;
+  top: 1.25rem;
   height: 92%;
-  top:30px;
   background-color: $red;
   z-index: 2;
   opacity: 0;
@@ -630,8 +659,8 @@ li.grid-item{
 	-ms-transition: all 0.2s ease-in;
 	-o-transition: all 0.2s ease-in;
 	transition: all 0.2s ease-in;
-  width: 92%;
-  height: 90%;
+  width: 95%;
+  height: 95%;
 }
 
 .grid-hover:hover{
@@ -662,9 +691,7 @@ li.grid-item{
   line-height:1.2em;
 }
 
-li.grid-item img{
-  width:100%;
-}
+
 
 /*
 **************************
@@ -896,6 +923,18 @@ textarea{
 
 textarea:focus{background:#f4f4f4; height:250px;}
 
+@media all and (max-width: 775px) {
+  #divider {
+    border-bottom: 2px solid $grey-light;
+    padding-bottom: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  #right.column.is-5 {
+    padding-left: 0.75rem;
+  }
+}
+
 @media all and (max-width: 480px) {
 
   /*
@@ -905,13 +944,12 @@ textarea:focus{background:#f4f4f4; height:250px;}
   */
 
   #portfolio-sidebar{
-
     width:310px !important;
     padding-right: 0;
   }
 
   .portfolio-grid{
-    width:310px;
+    width: 310px;
   }
 
   .grid-hover, li.grid-item, li.grid-item img{
