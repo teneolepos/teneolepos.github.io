@@ -78,7 +78,8 @@
   color: #43283A; }
 
 .button a {
-  color: white; }
+  color: white;
+  border: none; }
 
 .button a:focus, a:hover {
   outline: none;
